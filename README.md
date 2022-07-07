@@ -7,7 +7,7 @@ This repository is meant to contain scripts to assist customers to Pause/Unpause
 # Setup
   1. Use the command 'https://github.com/iamakashladdha/dagutil.git' to clone this repo
   2. Use the command `cd dagutil` to change your working directory
-  3. Run the `python3 init` command to generate the `airflow-connections.yaml` file
+  3. Run the `python3 init-connections.py` command to generate the `airflow-connections.yaml` file
   4. In the `airflow-connections.yaml` update variables to match your target i.e. Software deployment and Astro deployments
  
   - Astro
@@ -23,8 +23,8 @@ This repository is meant to contain scripts to assist customers to Pause/Unpause
 # Execution Commands
 *After completing the setup section above, you may use the following make commands:*
 - Use the `python3 dagstate.py <target> <action> <daglist>` command to execute the utility to pause/unpause Dag's
-    - target : Accepted Values are `Software` or `Astro`
-    - action : `Pause` or `Unpause` Dags
-    - daglist : Text file name, having list of dags with one line for each dag in input folder. Example daglist.txt
+    - target: Accepted Values are `Software` or `Astro`
+    - action: `Pause` or `Unpause` Dags
+    - daglist: Text file name, having list of dags with one line for each dag in input folder. Example daglist.txt
     - sample command: python3 dagstate.py astro unpause daglist.txt 
     - sample command: python3 dagstate.py software pause daglist.txt

@@ -20,8 +20,8 @@ This repository is meant to contain scripts to assist customers to Pause/Unpause
 # Execution Commands
 *After completing the setup section above, you may use the following make commands:*
 - Use the `python3 dagstate.py <target> <action> <daglist>` command to execute the utility to pause/unpause Dag's
-    <target>: Accepted Values are `Software` or `Astro`
-    <action> : `Pause` or `Unpause` Dags
-    <daglist> : Text file name, having list of dags with one line for each dag in input folder.Example daglist.txt
-    sample command: python3 dagstate.py astro unpause daglist.txt 
-    sample command: python3 dagstate.py software pause daglist.txt
+    - <target>: Accepted Values are `Software` or `Astro`
+    - <action> : `Pause` or `Unpause` Dags
+    - <daglist> : Text file name, having list of dags with one line for each dag in input folder.Example daglist.txt
+    - sample command: python3 dagstate.py astro unpause daglist.txt 
+    - sample command: python3 dagstate.py software pause daglist.txt

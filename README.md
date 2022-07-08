@@ -1,5 +1,5 @@
 # Overview
-This repository is meant to contain scripts to assist customers to Pause/Unpause Dags in Software or Astro as needed. See usage instructions below
+This repository is meant to contain scripts to assist customers to Pause/Unpause Dags in Software and Astro as needed. See usage instructions below
 
 # Pre-requisites
 - Python 3

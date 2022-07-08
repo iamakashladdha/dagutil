@@ -48,3 +48,23 @@ class softwareClient():
                 exit()
 
         return status
+
+    def list_dags(self):
+
+            url = f"{self.domain}/dags"
+        
+            response = requests.get(url=url, headers=self.headers)
+                
+            if response.status_code == 200:
+                return response.text
+            
+            else:
+                if " ERROR: Cannot access requested deployment" in response.text:
+                    status = " ERROR: Please provide correct domain for the target deployment"
+                    print(status)
+                    exit()
+                
+                else:
+                    status = " ERROR: Unable to perform the requested action, Please check"
+                    print(status)
+                    exit()

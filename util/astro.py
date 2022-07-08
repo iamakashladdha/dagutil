@@ -41,7 +41,8 @@ class astroClient():
             return response["access_token"]
 
         except Exception as e:
-            print("EXCEPTION: Got Exception while getting the Auth Token for Astro. Please check airflow-connections.yaml fil. Terminating Execution")
+            print("EXCEPTION: Got Exception while getting the Auth Token for Astro. Please check airflow-connections.yaml file. Terminating Execution")
+            print(str(e))
             exit()
 
     def pause_unpausedags(self,dag_id, pauseflag):
@@ -74,3 +75,24 @@ class astroClient():
         except Exception as e:
             print(" EXCEPTION: Got Exception while performing the pause/unpause action")
             print(str(e))
+
+    def list_dags(self):
+            
+            url = f'{self.domain}/api/v1/dags'
+            response = requests.get(url=url, headers=self._build_headers())
+            
+            if response.status_code == 200:
+                return response.text
+            
+            else:
+                if " ERROR: Cannot access requested deployment" in response.text:
+                    status = " ERROR: Please provide correct domain for the target deployment"
+                    print(status)
+                    exit()
+                    
+                else:
+                    status = " ERROR: Unable to perform the requested action, Please check"
+                    print(status)
+                    exit()
+                
+                

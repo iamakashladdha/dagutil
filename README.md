@@ -1,5 +1,5 @@
 # Overview
-This repository is meant to contain scripts to assist customers to Pause/Unpause Dags in Software and Astro as needed. See usage instructions below
+This repository is meant to contain scripts to assist customers to Get List of Dags, Pause/Unpause Dags in Software and Astro as needed. See usage instructions below
 
 # Pre-requisites
 - Python 3
@@ -22,6 +22,13 @@ This repository is meant to contain scripts to assist customers to Pause/Unpause
 
 # Execution Commands
 *After completing the setup section above, you may use the following make commands:*
+
+1. Get List of Dags for a Deployment
+- Use the `python3 getdaglist.py <target>` command to execute the utility to get list of dags including Dag's Description, Pause Status and Tag list
+    # <target>: Accepted Values Software or Astro
+- Once executed CSV file (output_dagdetails.csv) is generated in the '/output' folder having the details of the DAG.
+
+2. Pause/Unpause List of Dags in a Deployment
 - Use the `python3 dagstate.py <target> <action> <daglist>` command to execute the utility to pause/unpause Dag's
     - target: Accepted Values are `Software` or `Astro`
     - action: `Pause` or `Unpause` Dags

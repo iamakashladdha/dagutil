@@ -1,7 +1,7 @@
 # Overview
 This repository is meant to contain scripts to assist customers to 
-- Get Dag Details, It includes dag_id, description, pause status, and tags
-- Pause/Unpause Dags in Software and Astro by providing a list of dag_id's
+- Get Dag Details - Output includes dag_id, description, pause status, and tags
+- Pause/Unpause Dags in Software and Astro by providing a list of dag_id's as input
 
 See usage instructions below
 

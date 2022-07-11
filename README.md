@@ -1,5 +1,9 @@
 # Overview
-This repository is meant to contain scripts to assist customers to Get List of Dags, Pause/Unpause Dags in Software and Astro as needed. See usage instructions below
+This repository is meant to contain scripts to assist customers to 
+- Get Dag Details, It includes dag_id, description, pause status, and tags
+- Pause/Unpause Dags in Software and Astro by providing a list of dag_id's
+
+See usage instructions below
 
 # Pre-requisites
 - Python 3

@@ -78,7 +78,7 @@ class astroClient():
 
     def list_dags(self):
             
-            url = f'{self.domain}/api/v1/dags'
+            url = f'{self.domain}/api/v1/dags?limit=500'
             response = requests.get(url=url, headers=self._build_headers())
             
             if response.status_code == 200:

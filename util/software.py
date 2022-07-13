@@ -51,7 +51,7 @@ class softwareClient():
 
     def list_dags(self):
 
-            url = f"{self.domain}/dags"
+            url = f"{self.domain}/dags?limit=500"
         
             response = requests.get(url=url, headers=self.headers)
                 

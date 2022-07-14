@@ -31,7 +31,7 @@ See usage instructions below
 - Use the `python3 getdaglist.py <target>` command to execute the utility to get list of dags including Dag's Description, Pause Status and Tag list
     - target: Accepted Values Software or Astro
 - Once executed CSV file (output_dagdetails.csv) is generated in the `/output` folder having the details of the DAG
-- Getting the Dag list is limited to 500 DAG_ID's in API call, API default being 100.
+- Getting the Dag list is limited to 100 DAG_ID's i.e. API default.
 
 2. Pause/Unpause List of Dags in a Deployment
 - Use the `python3 dagstate.py <target> <action> <daglist>` command to execute the utility to pause/unpause Dag's

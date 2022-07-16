@@ -25,7 +25,7 @@ See usage instructions below
   - Software Deployment Release Name: From the Astronomer UI in the Software product, this is retrievable from the URL shown in your browser. Your URL will have the following format: `https://app.<BASE-DOMAIN>/w/<WORKSPACE-ID>/d/<DEPLOYMENT-RELEASE-NAME>`,  you'll only need the <RELEASE-NAME> piece.
 
 # Execution Commands
-*After completing the setup section above, you may use the following make commands:*
+*After completing the setup section above, you may use the following commands to execute Utility:*
 
 1. Get List of Dags for a Deployment
 - Use the `python3 getdaglist.py <target>` command to execute the utility to get list of dags including Dag's Description, Pause Status and Tag list

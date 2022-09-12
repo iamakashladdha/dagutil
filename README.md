@@ -1,3 +1,6 @@
+# Update
+This repo is now merged with https://github.com/astronomer/migrate-to-astro and will be maintained in the new Repository migrate-to-astro.
+
 # Overview
 This repository is meant to contain scripts to assist customers to 
 - Get Dag Details - Gets total Number of Dags in the Deployment and then for those Dags CSV output includes dag_id, description, pause status, and tags
